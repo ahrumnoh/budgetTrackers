@@ -1,3 +1,5 @@
+'use strict';
+
 let transactions = [];
 let myChart;
 
@@ -16,21 +18,21 @@ fetch("/api/transaction")
 
 function populateTotal() {
   // reduce transaction amounts to a single total value
-  let total = transactions.reduce((total, t) => {
-    return total + parseInt(t.value);
+  const total = transactions.reduce((currtotal, t) => {
+    return currtotal + parseInt(t.value);
   }, 0);
 
-  let totalEl = document.querySelector("#total");
+  const totalEl = document.querySelector("#total");
   totalEl.textContent = total;
 }
 
 function populateTable() {
-  let tbody = document.querySelector("#tbody");
+  const tbody = document.querySelector("#tbody");
   tbody.innerHTML = "";
 
   transactions.forEach(transaction => {
     // create and populate a table row
-    let tr = document.createElement("tr");
+    const tr = document.createElement("tr");
     tr.innerHTML = `
       <td>${transaction.name}</td>
       <td>${transaction.value}</td>
@@ -68,15 +70,17 @@ function populateChart() {
     type: 'line',
       data: {
         labels,
-        datasets: [{
+        datasets: [
+          {
             label: "Total Over Time",
             fill: true,
-            backgroundColor: "#6666ff",
+            backgroundColor: "#5cb0de",
             data
-        }]
-    }
-  });
-}
+         }
+        ]
+      }
+    });
+  }
 
 function sendTransaction(isAdding) {
   let nameEl = document.querySelector("#t-name");
@@ -93,7 +97,7 @@ function sendTransaction(isAdding) {
   }
 
   // create record
-  let transaction = {
+  const transaction = {
     name: nameEl.value,
     value: amountEl.value,
     date: new Date().toISOString()
@@ -144,9 +148,10 @@ function sendTransaction(isAdding) {
   });
 }
 
-document.querySelector("#add-btn").onclick = function() {
+document.querySelector("#add-btn").addEventListener(`click`, event => {
+  event.preventDefault();
   sendTransaction(true);
-};
+});
 
 document.querySelector("#sub-btn").onclick = function() {
   sendTransaction(false);
