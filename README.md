@@ -2,7 +2,7 @@ Budget Tracker
 
 # Budget Tracker 💰
 
-![Workout Tracker](https://github.com/ahrumnoh/workout-tracker/blob/main/assets/image/workout%20tracker.png?raw=true)
+![Workout Tracker](https://github.com/ahrumnoh/budgetTrackers/blob/main/public/image/Budget%20Tracker.jpg?raw=true)
 
 
   ## Overview
