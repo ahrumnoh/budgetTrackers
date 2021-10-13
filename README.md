@@ -1,17 +1,17 @@
-Budget Tracker
+## Budget Tracker 💰
 
-# Budget Tracker 💰
-
-![Workout Tracker](https://github.com/ahrumnoh/budgetTrackers/blob/main/public/image/Budget%20Tracker.jpg?raw=true)
+![Workout Tracker-AHRUMNOHUSYD](https://github.com/ahrumnoh/budgetTrackers/blob/main/public/image/Budget%20Tracker.jpg?raw=true)
 
 
-  ## Overview
+## Overview
 
 AS AN avid traveller
 I WANT to be able to track my withdrawals and deposits with or without a data/internet connection
 SO THAT my account balance is accurate when I am traveling
 
-  ## Table of Contents
+https://github.com/ahrumnoh/budgetTrackers/blob/main/public/image/Screenshot%20(101).png?raw=true
+
+ ## Table of Contents
   * [Installation](#installation)
   * [Technologies](#technologies)
   * [Screenshot](#Screenshot)
@@ -19,34 +19,42 @@ SO THAT my account balance is accurate when I am traveling
 
   
   ## Installation
-  * ```npm install``` to install all modules listed within the ```package.json``` file<br>
-  * ```express```<br>
-  * ```mongoose```<br>
-  * ```morgan```<br>
-  * ```path```<br>
+* npm i install
+
+* npm i express
+
+* npm i mongoose
+
+
+## ScreenShot
+
+  ![SCREENSHOT](https://github.com/ahrumnoh/budgetTrackers/blob/main/public/image/Screenshot%20(101).png?raw=true)
     
-  ## 💻Technologies
-  * <a href="www.javascript.com" target="_blank">JavaScript</a>:
-  * <a href="https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5" target="_blank">HTML5</a>
-  * <a href="http://www.css3.info/" target="_blank">CSS3</a>
-  * <a href="www.jquery.com" target="_blank">jQuery</a>
-  * <a href="www.npmjs.com" target="_blank">NPM</a>
-  * <a href="https://nodejs.org/en/" target="_blank">Node.js</a>
-  * <a href="https://expressjs.com/" target="_blank">Express.js</a>
-  * <a href="https://www.mongodb.com/" target="_blank">MongoDB</a>
-  * <a href="https://mongoosejs.com/" target="_blank">Mongoose</a>
+## 💻Technologies
+  * NPM
+  * MONGOOS
+  * HEROKU
+  * 
 
-   ## 👨‍🦯Website link ##
+ ## 👨‍🦯Website link ##
 
-   * Deployed URL: 
-  ## Screenshot
+   * Deployed URL: https://budgettrackerahrum.herokuapp.com/
+## Screenshot
   ![Mainpage]()
   ![Form Sector]()
   ![Form Sector2]()
   ![Dashboard]()
   
 
-  ## 🚩License
+
+## Run
+* On your VS Code clone the gibthub repository.
+* Install all dependencies (see above)
+* Create a terminal on the Budget-Tracker folder and run:
+* mongod
+* Create another terminal on the same folder and run:
+* node server
+## 🚩License
 
 *   MIT License
 
