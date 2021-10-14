@@ -34,18 +34,11 @@ https://github.com/ahrumnoh/budgetTrackers/blob/main/public/image/Screenshot%20(
   * NPM
   * MONGOOS
   * HEROKU
-  * 
+  
 
  ## 👨‍🦯Website link ##
 
    * Deployed URL: https://budgettrackerahrum.herokuapp.com/
-## Screenshot
-  ![Mainpage]()
-  ![Form Sector]()
-  ![Form Sector2]()
-  ![Dashboard]()
-  
-
 
 ## Run
 * On your VS Code clone the gibthub repository.
